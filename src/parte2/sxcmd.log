@@ -1,46 +1,21 @@
 ### Custom WaveView ADV log file, revision U-2023.03-SP2 (build Aug 24, ) ###
-### created at 21:23:53 on Fri Mar  1 2024 (Linux AMD64) ###
-### Host Name: redhat003   User ID: Montero_Marenco_I_2024_vlsi   PID: 343762   ###
+### created at 17:39:25 on Sat Mar  2 2024 (Linux AMD64) ###
+### Host Name: redhat003   User ID: Montero_Marenco_I_2024_vlsi   PID: 436399   ###
 wv_start_log
 # (0) running in waveview only mode
 # (0) SW_SX_PERL_LIB defined
 # (0) SW_SX_TCL_LIB defined
 # (0) HOME defined
-sx_open_sim_file_read {fo4opt.tr0}
-wv_select_tree_item {Custom WaveView} {} {hierview} {D0:fo4opt.tr0(0)} {0} {+sep=@}
-wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:fo4opt.tr0(0)} {+sep=@}
-wv_select_tree_item {Custom WaveView} {} {hierview} {D0:fo4opt.tr0(0)@toplevel(0)} {0} {+sep=@}
-wv_select_list_item {Custom WaveView} {} {sigview} {v(a)} 3
-wv_drag_list_item {Custom WaveView} {} {sigview} {v(a)} 3
-wv_drag_enter WV1
-wv_drop_on WV1
+sx_open_sim_file_read {inverter_tf.sw0}
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:inverter_tf.sw0(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:inverter_tf.sw0(0)@toplevel(0)} {0} {+sep=@}
 wv_select_list_item {Custom WaveView} {} {sigview} {v(b)} 4
 wv_drag_list_item {Custom WaveView} {} {sigview} {v(b)} 4
 wv_drag_enter WV1
-wv_drag_to WV1 58 301
 wv_drop_on WV1
-wv_select_list_item {Custom WaveView} {} {sigview} {v(c)} 5
-wv_drag_list_item {Custom WaveView} {} {sigview} {v(c)} 5
-wv_drag_enter WV1
-wv_drag_to WV1 1 329
-wv_drop_on WV1
-wv_select_list_item {Custom WaveView} {} {sigview} {v(d)} 6
-wv_drag_list_item {Custom WaveView} {} {sigview} {v(d)} 6
-wv_drag_enter WV1
-wv_drag_to WV1 5 356
-wv_drop_on WV1
-wv_select_list_item {Custom WaveView} {} {sigview} {v(e)} 7
-wv_drag_list_item {Custom WaveView} {} {sigview} {v(e)} 7
-wv_drag_enter WV1
-wv_drag_to WV1 53 343
-wv_drop_on WV1
-wv_select_list_item {Custom WaveView} {} {sigview} {v(f)} 8
-wv_drag_list_item {Custom WaveView} {} {sigview} {v(f)} 8
-wv_drag_enter WV1
-wv_drag_to WV1 1 359
-wv_drop_on WV1
+wv_select_window {Custom WaveView} 
 wv_close_window {Custom WaveView} 
-wv_move_window {Confirmation} {} 719 352
-wv_move_window {Confirmation} {} 729 355
+wv_move_window {Confirmation} {} 701 352
+wv_move_window {Confirmation} {} 711 355
 wv_select_dialog {Confirmation} 
 #wv_press_button {Confirmation} {} {Ok} 
