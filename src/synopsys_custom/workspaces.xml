@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- created by Custom Compiler (TM), build #, on Fri Mar  1 21:27:58 2024
+<!-- created by Custom Compiler (TM), build #, on Sat Mar  2 14:24:21 2024
 -->
 <synopsysFile version="2.2" name="synopsysWorkspace">
     <workspace default="1" name="leLayout" title="Layout">
@@ -18,10 +18,10 @@
         <overlay windowType="lxSymbolicEditor">
             <dockArea side="left">
                 <assistantGroup>
-                    <assistant show="false" name="lxSEDSchematicAssistant" position="452" floating="false" length="318"/>
+                    <assistant floating="false" show="false" name="lxSEDSchematicAssistant" position="452" length="318"/>
                 </assistantGroup>
                 <assistantGroup>
-                    <assistant before="lxSEDSchematicAssistant" forWorkspace="true" name="lxDevicePanelSDC" position="452" floating="false" length="318"/>
+                    <assistant floating="false" before="lxSEDSchematicAssistant" forWorkspace="true" name="lxDevicePanelSDC" position="452" length="318"/>
                 </assistantGroup>
             </dockArea>
         </overlay>
@@ -30,16 +30,16 @@
         <overlay windowType="lxSymbolicEditor">
             <dockArea side="left">
                 <assistantGroup>
-                    <assistant show="false" name="lxSEDSchematicAssistant" position="452" floating="false" length="318"/>
+                    <assistant floating="false" show="false" name="lxSEDSchematicAssistant" position="452" length="318"/>
                 </assistantGroup>
                 <assistantGroup index="0">
-                    <assistant before="lxSEDSchematicAssistant" forWorkspace="true" name="lxPatternPanelMDC" floating="false"/>
-                    <assistant forWorkspace="true" name="lxDevicePanelMDC" floating="false"/>
+                    <assistant floating="false" before="lxSEDSchematicAssistant" forWorkspace="true" name="lxPatternPanelMDC"/>
+                    <assistant floating="false" forWorkspace="true" name="lxDevicePanelMDC"/>
                 </assistantGroup>
             </dockArea>
             <dockArea side="top">
                 <toolbarRow level="0">
-                    <toolbar after="lxSelection" forWorkspace="true" name="lxGridSizeMDC" title="Grid Size"/>
+                    <toolbar forWorkspace="true" name="lxGridSizeMDC" after="lxSelection" title="Grid Size"/>
                 </toolbarRow>
             </dockArea>
         </overlay>
@@ -70,16 +70,16 @@
                     <toolbar forWorkspace="true" name="lxSDLToolbarLayout" title="SDL"/>
                 </toolbarRow>
                 <assistantGroup>
-                    <assistant forWorkspace="true" name="lxSchematicAssistant" position="452" floating="false" length="318"/>
+                    <assistant floating="false" forWorkspace="true" name="lxSchematicAssistant" position="452" length="318"/>
                 </assistantGroup>
                 <assistantGroup>
-                    <assistant before="lxSchematicAssistant" name="heDesignNavigator" position="452" floating="false" length="318"/>
+                    <assistant floating="false" before="lxSchematicAssistant" name="heDesignNavigator" position="452" length="318"/>
                 </assistantGroup>
             </dockArea>
             <dockArea side="right">
                 <assistantGroup index="0">
-                    <assistant show="false" forWorkspace="true" name="lxTemplateManager" floating="false"/>
-                    <assistant show="false" forWorkspace="true" name="lxTemplateBrowser" floating="false"/>
+                    <assistant floating="false" forWorkspace="true" show="false" name="lxTemplateManager"/>
+                    <assistant floating="false" forWorkspace="true" show="false" name="lxTemplateBrowser"/>
                 </assistantGroup>
             </dockArea>
         </overlay>
@@ -106,7 +106,7 @@
         <overlay windowType="leLayout">
             <dockArea side="left">
                 <assistantGroup>
-                    <assistant forWorkspace="true" name="ueUDDAssistant" floating="false"/>
+                    <assistant floating="false" forWorkspace="true" name="ueUDDAssistant"/>
                 </assistantGroup>
             </dockArea>
         </overlay>
@@ -118,7 +118,7 @@
         <overlay windowType="leLayout">
             <dockArea side="left">
                 <assistantGroup>
-                    <assistant show="false" forWorkspace="true" name="deTemplateAttributes" floating="false"/>
+                    <assistant floating="false" forWorkspace="true" show="false" name="deTemplateAttributes"/>
                 </assistantGroup>
             </dockArea>
         </overlay>
@@ -127,7 +127,7 @@
         <overlay windowType="seSchematic">
             <dockArea side="left">
                 <assistantGroup>
-                    <assistant show="false" forWorkspace="true" name="deTemplateAttributes" floating="false"/>
+                    <assistant floating="false" forWorkspace="true" show="false" name="deTemplateAttributes"/>
                 </assistantGroup>
             </dockArea>
         </overlay>
