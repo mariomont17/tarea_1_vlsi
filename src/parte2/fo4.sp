@@ -54,10 +54,7 @@ X5 e f inv M='H**4'             * load on load
 + TRIG v(d) VAL='0.8*SUPPLY' FALL=1
 + TARG v(d) VAL='0.2*SUPPLY' FALL=1
 
-measure diff param='tpdr-tpdf' * diff between delays
-
-*v7 net16 gnd dc=1.8
-*v4 net15 gnd dc=0 pulse ( 0 1.8 0 100p 100p 2n 4.2n )
+.measure diff param='tpdr-tpdf' * diff between delays
 
 .option opfile=1 split_dp=1
 

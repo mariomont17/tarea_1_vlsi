@@ -3,6 +3,6 @@ $DATA1 SOURCE='PrimeSim HSPICE' VERSION='U-2023.03-SP2 linux6' PARAM_COUNT=2
  index            p1               bestratio        tpdr            
                   tpdf             tpd              diff            
                   temper           alter#          
- 3                   2.1200           2.1200         1.134e-10      
-                   7.704e-11        9.523e-11        3.638e-11      
+ 1                   1.0000           1.0000         1.272e-10      
+                   6.728e-11        9.725e-11        5.993e-11      
                     25.0000        1               

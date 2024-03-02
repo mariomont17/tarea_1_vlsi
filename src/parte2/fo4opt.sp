@@ -39,8 +39,8 @@ X5 e f inv P='P1*220e-9' M=256        * load on load
 **************************************************************
 * Stimulus
 **************************************************************
-*.tran 0.1p 800p SWEEP OPTIMIZE=optrange RESULTS=diff MODEL=optmod
-.tran 0.1p 800p SWEEP OPTIMIZE=optrange RESULTS=tpd MODEL=optmod 
+.tran 0.1p 800p SWEEP OPTIMIZE=optrange RESULTS=diff MODEL=optmod
+*.tran 0.1p 800p SWEEP OPTIMIZE=optrange RESULTS=tpd MODEL=optmod 
 
 .measure tpdr                              * rising propagation delay
 + TRIG v(c) VAL='SUPPLY/2' FALL=1
