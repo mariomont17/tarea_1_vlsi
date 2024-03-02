@@ -39,3 +39,12 @@
 [19:07:28.85] /# gi::executeAction {giConsoleEditCopy} -in [gi::getWindows 0]
 [19:07:28.85] /# gi::executeAction {giConsoleLogCopy} -in [gi::getWindows 0]
 [19:07:31.11] /i db::setAttr iconified -of [gi::getFrames 1] -value true
+[21:27:48.93] /i exit
+[21:27:49.01] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog}]
+[21:27:49.27] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog}] -value 414x181+743+423
+[21:27:52.91] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog}]
+[21:27:52.93] /r giDialog gi::setActiveWindow 1
+[21:27:52.93] /r giDialog gi::setActiveWindow 1 -raise true
+[21:27:58.49] /o Shutdown time: Fri Mar  1 21:27:58 2024
+[21:27:58.49] /o Elapsed session real time: 2 hours 21.18 minutes
+[21:27:58.49] /o Session terminated. Log is at /mnt/vol_NFS_rh003/Est_VLSI_I_2024/Montero_Marenco_I_2024_vlsi/Tareas/tarea_1_vlsi/src/synopsys_custom/logs/ccompiler.Montero_Marenco_I_2024_vlsi.2024_3_1_190645_331255.log
