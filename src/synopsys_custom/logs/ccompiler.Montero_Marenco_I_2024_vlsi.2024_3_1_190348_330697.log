@@ -1,0 +1,46 @@
+[19:03:50.77] /o 
+              /c                                 Custom Compiler™ 
+              /c 
+              /c                Version U-2023.03-SP2 for linux64 - Aug 25, 2023 
+              /c 
+              /c                     Copyright (c) 2004 - 2023 Synopsys, Inc.
+              /c    This software and the associated documentation are proprietary to Synopsys,
+              /c  Inc. This software may only be used in accordance with the terms and conditions
+              /c  of a written license agreement with Synopsys, Inc. All other use, reproduction,
+              /c    or distribution of this software is strictly prohibited.  Licensed Products
+              /c      communicate with Synopsys servers for the purpose of providing software
+              /c     updates, detecting software piracy and verifying that customers are using
+              /c     Licensed Products in conformity with the applicable License Key for such
+              /c   Licensed Products. Synopsys will use information gathered in connection with
+              /c     this process to deliver software updates and pursue software pirates and
+              /c                                    infringers.
+              /c 
+              /c  Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+              /c             Inclusivity and Diversity" (Refer to article 000036315 at
+              /c                         https://solvnetplus.synopsys.com)
+              /c 
+              /c Build  (OPT) Config 9128410 compiled on Fri Aug 25 11:03:32 2023 for CentOS64 7.3
+              /c Invocation: /mnt/vol_synopsys2023/synopsys/customcompiler/U-2023.03-SP2/linux64/platform/bin/cdesigner -loadAll true
+              /c Execution time: Fri Mar  1 19:03:48 2024
+              /c Host: redhat003
+              /c Working directory: /mnt/vol_NFS_rh003/Est_VLSI_I_2024/Montero_Marenco_I_2024_vlsi/Tareas/tarea_1_vlsi/src
+              /c 
+[19:03:57.02] /m Information: Registering ICV PERC package...
+[19:03:57.48] /r giShowFrameTabs true
+[19:03:57.49] /r giWindowId 1
+[19:03:57.49] /r giWindowGeometry 1040x800
+[19:04:10.39] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/giConsole} -in [gi::getWindows 1]
+[19:04:10.40] /# 
+[19:04:27.41] /i exit
+[19:04:27.49] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 0]]
+[19:04:27.77] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 0]] -value 414x181+752+457
+[19:04:30.92] /r giDialog gi::pressButton {cancel} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 0]]
+[19:04:43.82] /i exit
+[19:04:43.90] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 0]]
+[19:04:44.20] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 0]] -value 414x181+752+457
+[19:04:45.56] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 0]]
+[19:04:45.56] /r giDialog gi::setActiveWindow 1
+[19:04:45.56] /r giDialog gi::setActiveWindow 1 -raise true
+[19:04:53.11] /o Shutdown time: Fri Mar  1 19:04:53 2024
+[19:04:53.11] /o Elapsed session real time: 1.03 minutes
+[19:04:53.11] /o Session terminated. Log is at /mnt/vol_NFS_rh003/Est_VLSI_I_2024/Montero_Marenco_I_2024_vlsi/Tareas/tarea_1_vlsi/src/synopsys_custom/logs/ccompiler.Montero_Marenco_I_2024_vlsi.2024_3_1_190348_330697.log

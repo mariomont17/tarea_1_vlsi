@@ -1,0 +1,20 @@
+#------------------------------------------------------------------------------
+# XFAB xt018 lib.defs file
+#    this file was automatically created by X-FAB Kit Flow software
+#    do not modify this file manually
+#------------------------------------------------------------------------------
+DEFINE PRIMLIB                  $FTK_KIT_DIR/xt018/synopsys/v12_1/PDK/CustomCompiler/v12_1_1_1/PRIMLIB_1243
+DEFINE TECH_XT018               $FTK_KIT_DIR/xt018/synopsys/v12_1/PDK/CustomCompiler/v12_1_1_1/TECH_XT018_1243
+DEFINE TECH_XT018_HD            $FTK_KIT_DIR/xt018/synopsys/v12_1/PDK/CustomCompiler/v12_1_1_1/TECH_XT018_HD_1243
+#--------------------------------------
+INCLUDE $SYNOPSYS_CUSTOM_INSTALL/samples/lib.defs
+#--------------------------------------
+# digital part
+#--------------------------------------
+DEFINE D_CELLS_HDLL             $FTK_KIT_DIR/xt018/diglibs/D_CELLS_HDLL/v1_3/synopsys_CC/v1_3_0/D_CELLS_HDLL
+DEFINE D_CELLS_HDMV             $FTK_KIT_DIR/xt018/diglibs/D_CELLS_HDMV/v2_1/synopsys_CC/v2_1_1/D_CELLS_HDMV
+DEFINE GATES_HD                 $FTK_KIT_DIR/xt018/diglibs/GATES_HD/v1_1/synopsys_CC/v1_1_1/GATES_HD
+DEFINE GATES_HD5V               $FTK_KIT_DIR/xt018/diglibs/GATES_HD5V/v1_1/synopsys_CC/v1_1_1/GATES_HD5V
+DEFINE GATES_SVT                $FTK_KIT_DIR/xt018/diglibs/GATES_SVT/v1_0/synopsys_CC/v1_0_0/GATES_SVT
+DEFINE IO_CELLS_FC1V8           $FTK_KIT_DIR/xt018/diglibs/IO_CELLS_FC1V8/v1_2/synopsys_CC/v1_2_5/IO_CELLS_FC1V8
+DEFINE IO_CELLS_FC5V            $FTK_KIT_DIR/xt018/diglibs/IO_CELLS_FC5V/v3_0/synopsys_CC/v3_0_0/IO_CELLS_FC5V
