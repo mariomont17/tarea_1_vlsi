@@ -1,4 +1,4 @@
-[17:19:29.37] /o 
+[10:12:47.44] /o 
               /c                                 Custom Compiler™ 
               /c 
               /c                Version U-2023.03-SP2 for linux64 - Aug 25, 2023 
@@ -21,26 +21,14 @@
               /c 
               /c Build  (OPT) Config 9128410 compiled on Fri Aug 25 11:03:32 2023 for CentOS64 7.3
               /c Invocation: /mnt/vol_synopsys2023/synopsys/customcompiler/U-2023.03-SP2/linux64/platform/bin/cdesigner -loadAll true
-              /c Execution time: Sat Mar  2 17:19:26 2024
+              /c Execution time: Mon Mar  4 10:12:44 2024
               /c Host: redhat003
-              /c Working directory: /mnt/vol_NFS_rh003/Est_VLSI_I_2024/Montero_Marenco_I_2024_vlsi/Tareas/tarea_1_vlsi/src
+              /c Working directory: /mnt/vol_NFS_rh003/Est_VLSI_I_2024/Montero_Marenco_I_2024_vlsi/Tareas/tarea_1_vlsi/src/parte2
               /c 
-[17:19:35.76] /m Information: Registering ICV PERC package...
-[17:19:35.92] /r giShowFrameTabs true
-[17:19:35.92] /r giWindowId 1
-[17:19:35.92] /r giWindowGeometry 1040x800
-[17:19:45.18] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/giConsole} -in [gi::getWindows 1]
-[17:19:45.18] /# 
-[17:20:02.66] /i db::setAttr maximized -of [gi::getFrames 1] -value true
-[17:20:02.98] /i db::setAttr geometry -of [gi::getFrames 1] -value 1910x1020+5+55
-[17:20:04.59] /i db::setAttr maximized -of [gi::getFrames 1] -value false
-[17:20:04.95] /i db::setAttr geometry -of [gi::getFrames 1] -value 1040x824+439+129
-[17:20:05.78] /i exit
-[17:20:05.86] /r giDialog gi::setActiveDialog [gi::getDialogs {deExitDialog} -parent [gi::getWindows 0]]
-[17:20:06.17] /r giDialog db::setAttr geometry -of [gi::getDialogs {deExitDialog} -parent [gi::getWindows 0]] -value 414x181+752+457
-[17:20:07.50] /r giDialog gi::pressButton {ok} -in [gi::getDialogs {deExitDialog} -parent [gi::getWindows 0]]
-[17:20:07.51] /r giDialog gi::setActiveWindow 1
-[17:20:07.51] /r giDialog gi::setActiveWindow 1 -raise true
-[17:20:12.83] /o Shutdown time: Sat Mar  2 17:20:12 2024
-[17:20:12.83] /o Elapsed session real time: 0.73 minutes
-[17:20:12.83] /o Session terminated. Log is at /mnt/vol_NFS_rh003/Est_VLSI_I_2024/Montero_Marenco_I_2024_vlsi/Tareas/tarea_1_vlsi/src/synopsys_custom/logs/ccompiler.Montero_Marenco_I_2024_vlsi.2024_3_2_171926_431098.log
+[10:12:53.65] /m Information: Registering ICV PERC package...
+[10:12:53.93] /r giShowFrameTabs true
+[10:12:53.93] /r giWindowId 1
+[10:12:53.93] /r giWindowGeometry 1040x800
+[10:12:57.85] /# gi::pressButton {/scroll/scrollArea/scrollAreaInnerWidget/applications/giConsole} -in [gi::getWindows 1]
+[10:12:57.85] /# 
+[10:13:11.02] /i db::setAttr iconified -of [gi::getFrames 1] -value true

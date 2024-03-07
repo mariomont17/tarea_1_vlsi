@@ -1,9 +1,10 @@
-* fo4opt.sp
+* inverter_tf.sp
 ****************************************************************
 * Parameters and models
 ****************************************************************
 .param SUPPLY=1.8
 .temp 25
+.param H=4
 .lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Montero_Marenco_I_2024_vlsi/Tareas/tarea_1_vlsi/src/Hspice/lp5mos/xt018.lib' tm
 .lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Montero_Marenco_I_2024_vlsi/Tareas/tarea_1_vlsi/src/Hspice/lp5mos/param.lib' 3s
 .lib '/mnt/vol_NFS_rh003/Est_VLSI_I_2024/Montero_Marenco_I_2024_vlsi/Tareas/tarea_1_vlsi/src/Hspice/lp5mos/config.lib' default
@@ -24,42 +25,16 @@ xm1 y a vdd vdd pe w='P' l=180n as=-1 ad=-1 ps=-1
 * Simulation Netlist
 ***************************************************************
 v1 vdd gnd dc='SUPPLY'
-v2 a gnd dc=0 pulse ( 0 'SUPPLY' 0p 20p 20p 400p 800p )
-X1 a b inv P='P1*220e-9'              * shape input waveform
-X2 b c inv P='P1*220e-9' M=4          * reshape input waveform
-X3 c d inv P='P1*220e-9' M=16         * device under test
-X4 d e inv P='P1*220e-9' M=64         * load
-X5 e f inv P='P1*220e-9' M=256        * load on load
-**************************************************************
-* Optimization SetUp
-**************************************************************
-.param P1=optrange(2,1,4)      * search from 1 to 16, guess 8
-.model optmod opt itropt=50     * maximum of 30 iterations
-.measure bestratio param='P1'   * compute best P/N ratio
+Vin a gnd 0
+X1 a b inv                      * shape input waveform
 **************************************************************
 * Stimulus
 **************************************************************
-*.tran 0.1p 800p SWEEP OPTIMIZE=optrange RESULTS=diff MODEL=optmod
-.tran 0.1p 800p SWEEP OPTIMIZE=optrange RESULTS=tpd MODEL=optmod 
-
-.measure tpdr                              * rising propagation delay
-+ TRIG v(c) VAL='SUPPLY/2' FALL=1
-+ TARG v(d) VAL='SUPPLY/2' RISE=1
-.measure tpdf                              * falling propagation delay
-+ TRIG v(c) VAL='SUPPLY/2' RISE=1
-+ TARG v(d) VAL='SUPPLY/2' FALL=1
-.measure tpd param='(tpdr+tpdf)/2' goal=0       * average prop delay
-.measure diff param='abs(tpdr-tpdf)' goal=0   * diff between delays
-
-.option opfile=1 split_dp=1
-
+.dc Vin 0 1.8 0.01
 
 .option post=1
 
-
 .option runlvl = 5
-
-
 
 
 .end
