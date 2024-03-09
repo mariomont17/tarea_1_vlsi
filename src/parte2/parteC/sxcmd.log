@@ -1,0 +1,47 @@
+### Custom WaveView ADV log file, revision U-2023.03-SP2 (build Aug 24, ) ###
+### created at 20:41:39 on Fri Mar  8 2024 (Linux AMD64) ###
+### Host Name: redhat003   User ID: Montero_Marenco_I_2024_vlsi   PID: 182311   ###
+wv_start_log
+# (0) running in waveview only mode
+# (0) SW_SX_PERL_LIB defined
+# (0) SW_SX_TCL_LIB defined
+# (0) HOME defined
+sx_open_sim_file_read {fo3.tr0}
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:fo3.tr0(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:fo3.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {v(c)} 5
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(c)} 5
+wv_drag_enter WV1
+wv_drop_on WV1
+wv_select_list_item {Custom WaveView} {} {sigview} {v(d)} 6
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(d)} 6
+wv_drag_enter WV1
+wv_drag_to WV1 100 387
+wv_drop_on WV1
+wv_select_list_item {Custom WaveView} {} {sigview} {v(b)} 4
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(b)} 4
+wv_drag_enter WV1
+wv_drag_to WV1 43 371
+wv_drop_on WV1
+wv_select_list_item {Custom WaveView} {} {sigview} {v(a)} 3
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(a)} 3
+wv_drag_enter WV1
+wv_drag_to WV1 84 338
+wv_drop_on WV1
+wv_select_list_item {Custom WaveView} {} {sigview} {v(e)} 7
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(e)} 7
+wv_drag_enter WV1
+wv_drag_to WV1 6 416
+wv_drag_to WV1 21 414
+wv_drop_on WV1
+wv_select_list_item {Custom WaveView} {} {sigview} {v(f)} 8
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(f)} 8
+wv_drag_enter WV1
+wv_drag_to WV1 10 431
+wv_drag_to WV1 41 429
+wv_drop_on WV1
+wv_close_window {Custom WaveView} 
+wv_move_window {Confirmation} {} 671 352
+wv_move_window {Confirmation} {} 681 355
+wv_select_dialog {Confirmation} 
+#wv_press_button {Confirmation} {} {Ok} 

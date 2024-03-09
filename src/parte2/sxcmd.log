@@ -1,21 +1,173 @@
 ### Custom WaveView ADV log file, revision U-2023.03-SP2 (build Aug 24, ) ###
-### created at 17:39:25 on Sat Mar  2 2024 (Linux AMD64) ###
-### Host Name: redhat003   User ID: Montero_Marenco_I_2024_vlsi   PID: 436399   ###
+### created at 20:15:48 on Fri Mar  8 2024 (Linux AMD64) ###
+### Host Name: redhat003   User ID: Montero_Marenco_I_2024_vlsi   PID: 172427   ###
 wv_start_log
 # (0) running in waveview only mode
 # (0) SW_SX_PERL_LIB defined
 # (0) SW_SX_TCL_LIB defined
 # (0) HOME defined
-sx_open_sim_file_read {inverter_tf.sw0}
-wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:inverter_tf.sw0(0)} {+sep=@}
-wv_select_tree_item {Custom WaveView} {} {hierview} {D0:inverter_tf.sw0(0)@toplevel(0)} {0} {+sep=@}
-wv_select_list_item {Custom WaveView} {} {sigview} {v(b)} 4
-wv_drag_list_item {Custom WaveView} {} {sigview} {v(b)} 4
+sx_open_sim_file_read {fo4opt.tr0}
+wv_press_tool_button {Custom WaveView} {} {OpenWaveformFile0} 
+wv_move_window {FileDialog} {} 573 138
+wv_move_window {FileDialog} {} 583 141
+wv_select_dialog {FileDialog} 
+wv_select_list_item {FileDialog} {} {FileList} {fo4opt2.tr0} 22
+wv_press_button {FileDialog} {} {Apply} 
+wv_press_button {FileDialog} {} {Ok} 
+wv_tree_context_menu {Custom WaveView} {} {hierview} 52 47 {D0:fo4opt2.tr0(2)} {+sep=@}
+wv_select_menu_item {Custom WaveView} {} {FileViewPopMenu.Close Selected Files} 
+wv_move_window {SelectFilesForCloseOrMeasure} {} 639 272
+wv_select_dialog {SelectFilesForCloseOrMeasure} 
+wv_press_button {SelectFilesForCloseOrMeasure} {} {Ok} 
+wv_select_window {Custom WaveView} 
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:fo4opt.tr0(0)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:fo4opt.tr0(0)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {power(v1)} 2
+wv_drag_list_item {Custom WaveView} {} {sigview} {power(v1)} 2
 wv_drag_enter WV1
 wv_drop_on WV1
+wv_expand_tree_item {Custom WaveView} {} {hierview} {D0:fo4opt2.tr0(1)} {+sep=@}
+wv_select_tree_item {Custom WaveView} {} {hierview} {D0:fo4opt2.tr0(1)@toplevel(0)} {0} {+sep=@}
+wv_select_list_item {Custom WaveView} {} {sigview} {power(v1)} 2
+wv_drag_list_item {Custom WaveView} {} {sigview} {power(v1)} 2
+wv_drag_enter WV1
+wv_drag_to WV1 28 345
+wv_drop_on WV1
+wv_select_list_item {Custom WaveView} {} {sigview} {power(v1)} 2
+wv_select_list_item {Custom WaveView} {} {sigview} {power(v1)} 2
+wv_list_context_menu {Custom WaveView} {} {sigview} {power(v1)} 2 53 38
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.LINE1
+wv_select_line WV1.PANEL1:1.LINE1
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.LINE2
+wv_select_line WV1.PANEL1:1.LINE2
+wv_dclick_wv_item WV1.PANEL1:1.LINE2
+wv_move_window {WaveformAttributesDialog} {} 749 327
+wv_move_window {WaveformAttributesDialog} {} 576 215
+wv_select_dialog {WaveformAttributesDialog} 
+wv_release_wv_item WV1 32 43
+wv_press_button {WaveformAttributesDialog} {} {Close} 
 wv_select_window {Custom WaveView} 
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 8.81529e-10 -0.0187008
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.LINE1
+wv_select_line WV1.PANEL1:1.LINE1
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.LINE2
+wv_select_line WV1.PANEL1:1.LINE2
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 2.95541e-10 -0.00736253
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.LEGEND
+wv_select_panel WV1.PANEL1:1.LEGEND
+wv_resize_browser {Custom WaveView} {} {WV.Browser} 250 873
+wv_resize_browser {Custom WaveView} {} {waveview 1:1} 1660 847
+wv_resize_window {Custom WaveView} 1920 1016
+wv_move_window {Custom WaveView} {} 0 27
+wv_press_tool_button {Custom WaveView} {} {ExportWaveform0} 
+wv_move_window {WaveformExportParameters} {} 594 183
+wv_move_window {WaveformExportParameters} {} 604 186
+wv_select_dialog {WaveformExportParameters} 
+wv_press_button {WaveformExportParameters} {} {Browse} 
+wv_select_dialog {FileDialog} 
+wv_press_button {FileDialog} {} {Cancel} 
+wv_press_button {WaveformExportParameters} {} {Cancel} 
+wv_select_window {Custom WaveView} 
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.LINE2
+wv_select_line WV1.PANEL1:1.LINE2
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.LINE2
+wv_select_line WV1.PANEL1:1.LINE2
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.LINE2
+wv_select_line WV1.PANEL1:1.LINE2
+wv_select_waveview 1 {waveview 1}
+wv_waveview_context_menu WV1.PANEL1:1.LINE2
+wv_select_waveview 1 {waveview 1}
+wv_select_menu_item {Custom WaveView} {waveview 1:1} {SignalPopMenu.Edit Alias} 
+wv_move_window {SetUpSignalAlias} {} 821 476
+wv_move_window {SetUpSignalAlias} {} 831 479
+wv_select_dialog {SetUpSignalAlias} 
+wv_set_check {SetUpSignalAlias} {} {UseOriginalName} 0
+wv_set_text {SetUpSignalAlias} {} {SignalAlias} "power_ratio_4(v1)"
+wv_press_button {SetUpSignalAlias} {} {Ok} 
+wv_select_window {Custom WaveView} 
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.LEGEND.WIDTH
+wv_drag_item_to WV1 82 109
+wv_move_wv_item WV1.PANEL1:1.LEGEND.WIDTH 108
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.LEGEND.WIDTH
+wv_drag_item_to WV1 109 108
+wv_move_wv_item WV1.PANEL1:1.LEGEND.WIDTH 144
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.LEGEND.WIDTH
+wv_drag_item_to WV1 145 110
+wv_move_wv_item WV1.PANEL1:1.LEGEND.WIDTH 174
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.LEGEND.WIDTH
+wv_drag_item_to WV1 173 113
+wv_move_wv_item WV1.PANEL1:1.LEGEND.WIDTH 140
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.LINE1
+wv_select_line WV1.PANEL1:1.LINE1
+wv_select_waveview 1 {waveview 1}
+wv_waveview_context_menu WV1.PANEL1:1.LINE1
+wv_select_waveview 1 {waveview 1}
+wv_select_menu_item {Custom WaveView} {waveview 1:1} {SignalPopMenu.Edit Alias} 
+wv_move_window {SetUpSignalAlias} {} 821 476
+wv_move_window {SetUpSignalAlias} {} 831 479
+wv_select_dialog {SetUpSignalAlias} 
+wv_set_check {SetUpSignalAlias} {} {UseOriginalName} 0
+wv_set_text {SetUpSignalAlias} {} {SignalAlias} "pwr_ratio_2.16(v1)"
+wv_press_button {SetUpSignalAlias} {} {Ok} 
+wv_select_window {Custom WaveView} 
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.LINE2
+wv_select_line WV1.PANEL1:1.LINE2
+wv_select_waveview 1 {waveview 1}
+wv_waveview_context_menu WV1.PANEL1:1.LINE2
+wv_select_waveview 1 {waveview 1}
+wv_select_menu_item {Custom WaveView} {waveview 1:1} {SignalPopMenu.Edit Alias} 
+wv_move_window {SetUpSignalAlias} {} 831 479
+wv_select_dialog {SetUpSignalAlias} 
+wv_set_text {SetUpSignalAlias} {} {SignalAlias} "pwr_ratio_4(v1)"
+wv_press_button {SetUpSignalAlias} {} {Ok} 
+wv_select_window {Custom WaveView} 
+wv_select_waveview 1 {waveview 1}
+wv_select_panel WV1.PANEL1:1 3.7037e-11 -0.00361642
+wv_select_waveview 1 {waveview 1}
+wv_select_wv_item WV1.PANEL1:1.LINE2
+wv_select_line WV1.PANEL1:1.LINE2
+wv_resize_browser {Custom WaveView} {} {WV.Browser} 250 605
+wv_resize_browser {Custom WaveView} {} {waveview 1:1} 928 579
+wv_resize_window {Custom WaveView} 1188 748
+wv_move_window {Custom WaveView} {} 184 27
+wv_select_list_item {Custom WaveView} {} {sigview} {v(a)} 4
+wv_drag_list_item {Custom WaveView} {} {sigview} {v(a)} 4
+wv_select_list_item {Custom WaveView} {} {sigview} {v(a)} 4
+wv_dclick_list_item {Custom WaveView} {} {sigview} {v(a)} 4
+wv_select_waveview 1 {waveview 1}
+wv_waveview_context_menu WV1.PANEL2:1.YAXIS1
+wv_select_waveview 1 {waveview 1}
+wv_waveview_context_menu WV1.PANEL2:1.LEGEND
+wv_select_waveview 1 {waveview 1}
+wv_select_menu_item {Custom WaveView} {waveview 1:1} {PanelPopMenu.Delete} 
+wv_move_window {Confirmation} {} 677 352
+wv_move_window {Confirmation} {} 687 355
+wv_select_dialog {Confirmation} 
+wv_press_button {Confirmation} {} {Ok} 
 wv_close_window {Custom WaveView} 
-wv_move_window {Confirmation} {} 701 352
-wv_move_window {Confirmation} {} 711 355
+wv_move_window {Confirmation} {} 677 352
+wv_move_window {Confirmation} {} 687 355
 wv_select_dialog {Confirmation} 
 #wv_press_button {Confirmation} {} {Ok} 

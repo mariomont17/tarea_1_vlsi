@@ -36,7 +36,6 @@ X1 a b inv                      * shape input waveform
 X2 b c inv M='H'                * reshape input waveform
 X3 c d inv M='H**2'             * device under test
 X4 d e inv M='H**3'             * load
-X5 e f inv M='H**4'             * load on load
 **************************************************************
 * Stimulus
 **************************************************************
