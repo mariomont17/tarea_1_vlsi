@@ -1,14 +1,14 @@
-# Tarea 1 VLSI
+# Tarea 1 - Diseño VLSI
 ### EL-5807 - Introducción al Diseño de Circuitos Integrados
 ### Escuela de Ingeniería Electrónica
 ### Tecnológico de Costa Rica
 
 <br/>
 
-## 1. Referencias
-[1] Weste and D. Harris, *CMOS VLSI Design: A Circuits and Systems Perspective*, 4th ed. Boston: Addison-Wesley, 2010.
+## 1. Introducción
 
-[2] Process and Device Specification XH018 - 0.18 μm Modular Mixed Signal HV CMOS, PDS-018-13. Release 7.0.1. XFAB Semiconductor Foundries, Nov. 2017
+En este informe, se abordan dos partes clave en el diseño de circuitos CMOS para el proceso XT018 con módulo LPMOS a 1.8V. En la Parte 1, se determinan las resistencias de canal de transistores NMOS y PMOS de tamaño mínimoa través del uso de dos métodos distintos. Además, se calcula la capacitancia equivalente de compuerta manualmente. En la Parte 2, se diseña un inversor mínimo con margen de ruido simétrico, optimizando la relación PMOS/NMOS. Se evalúan tiempos de retardo y se comparan soluciones manuales con las del optimizador, explorando criterios de rendimiento, potencia y área. Por último, se monta un deck de SPICE de un FO4 para determinar la resistencia efectiva de los transistores CMOS a través de la simulación. 
+
 
 ## 2. Desarrollo
 
@@ -43,9 +43,9 @@ Segun la tabla proporcionada en [2]; Cox es 8.46 fF/um para NMOS y 8.91fF/um par
 
 ### Parte 2.a
 
-Primero, se creó el esquematico con el tamaño mas pequeño permitido por el mismo Custom Compiler, de donde se obtuvieron los valores de Wne=220nm y Wpe=440nm. 
+Primero, se creó el esquematico con el tamaño mas pequeño permitido por el mismo Custom Compiler, de donde se obtuvieron los valores de Wne=220nm y Wpe=440nm (suponiendo una relación P/N de 2:1)
 [![sch.png](https://i.postimg.cc/6p4hhs20/sch.png)](https://postimg.cc/RW9fMDT6)
-Se creo el archivo HSPICE (`mos`)para simular la corriente de saturacion y la linealidad del mismo, con diferentes Vdd. En la siguiente figura se puede apreciar el resultado;
+Se creó el archivo HSPICE (`mos`)para simular la corriente de saturacion y la linealidad del mismo, con diferentes Vdd. En la siguiente figura se puede apreciar el resultado;
 
 
 
@@ -53,7 +53,7 @@ Se creo el archivo HSPICE (`mos`)para simular la corriente de saturacion y la li
 
 Se puede notar que existe una relacion lineal con Vdd y el transistor.
 
-Para determinar el Beta del transistor se utilizo la ecuacion;
+Para determinar el Beta del transistor se utilizó la ecuación;
 [![beta.png](https://i.postimg.cc/0Qjjpvr5/beta.png)](https://postimg.cc/XGMnbTwt)
 
 Entonces, para diseñar una curva donde el corte sea justo en Vdd/2, se necesita una relacion de Betan/Betap. Segun los resultados anteriores, Vtn=0,45V y Vtp=0,60
@@ -61,7 +61,7 @@ Betan=0.00003518958388317058
 Betap = 0.00003527336860670194
 La relacion es de 2.5.
 
-Se desarrollo el estudio sobre la curva caracteristica del inversor en hspice, utilizando el archivo `src/parte2/inverter_tf.sp`. Primero, se utilizo el menor ancho permitido por la aplicacion, con un Wne=220nm para el NMOS y un Wpe=440nm para el PMOS. Se describio el ancho del PMOS, siempre como el doble del NMOS. El largo es de L=180nm, para ambos transistores. Este fue el resultado del mismo.
+Se desarrolló el estudio sobre la curva característica del inversor en hspice, utilizando el archivo `src/parte2/inverter_tf.sp`. Primero, se utilizó el menor ancho permitido por la aplicacion, con un Wne=220nm para el NMOS y un Wpe=440nm para el PMOS. Se describio el ancho del PMOS, siempre como el doble del NMOS. El largo es de L=180nm, para ambos transistores. Este fue el resultado del mismo.
 
 [![w220.png](https://i.postimg.cc/CxtRV6XX/w220.png)](https://postimg.cc/753H3Xxn)
 
@@ -137,11 +137,17 @@ Habiendo escogido la relación P/N de 2:1, en esta última parte se realizó la 
 | fo3 | 94.2| 63.0  | 
 | fo4| 114.5 |  75.9 |
 
-Al aplicar la ecuacion 8.7 de [1] con los resultados de la tabla anterior y las capacitancias calculadas en la `Parte 1`, se encontrar los siguientes valores para las resistencias efectivas de los transistores PMOS y NMOS de la tecnología XH018
+Al aplicar la ecuacion 8.7 de [1] con los resultados de la tabla anterior y las capacitancias calculadas en la `Parte 1`, se encontrar los siguientes valores para las resistencias efectivas de los transistores PMOS y NMOS de la tecnología XT018
 
 
 |Transistor| Parámetro | Valor (kohm)|
 |:---------:|:---------:|:----:|
 |NMOS|  R_n  | 10.6 |
-|PMOS|  R_p | 31.9  | 
+|PMOS|  R_p | 31.9  |
 
+
+
+## 3. Referencias
+[1] Weste and D. Harris, *CMOS VLSI Design: A Circuits and Systems Perspective*, 4th ed. Boston: Addison-Wesley, 2010.
+
+[2] Process and Device Specification XH018 - 0.18 μm Modular Mixed Signal HV CMOS, PDS-018-13. Release 7.0.1. XFAB Semiconductor Foundries, Nov. 2017
