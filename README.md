@@ -120,6 +120,20 @@ Asimismo, se repitió la simulación para diferentes anchos para estudiar, como 
 
 </center>
 
+Finalmente, en esta seccion, se estudió los diferentes casos, de los transistores:
+- WP: worst case power; fast NMOS & fast PMOS
+- WS: worst csae speed; slow NMOS & slow NMOS
+- WO: worst case one; fast NMOS & slow PMOS
+- WZ: worst case zero; slow NMOS & fast PMOS
+
+En la siguiente figura se puede observar, que no hay mayor diferencia entre cada uno de la salida. Al menos, si analizamoos solo un inversor. 
+
+[![image.png](https://i.postimg.cc/3Nfpm3yg/image.png)](https://postimg.cc/gLRnPFHJ)
+
+Luego, segun las graficas se midieron los tiempos de subida y baja en cada caso, para asi obtener las esquinas del inversor. 
+
+[![image.png](https://i.postimg.cc/7LsQx17Q/image.png)](https://postimg.cc/5HzmgCsw)
+
 
 ****
 ### Parte 2.b
@@ -199,7 +213,15 @@ Al aplicar la ecuacion 8.7 de [1] con los resultados de la tabla anterior y las 
 
 </center>
 
-## 3. Referencias
+## 5. Conclusiones
+
+Se realizaron cálculos detallados para determinar las resistencias de canal de transistores NMOS y PMOS de tamaño mínimo utilizando dos métodos distintos. Se observó una discrepancia significativa entre los resultados de las ecuaciones utilizadas, lo que condujo a la selección de los resultados de una de ellas para su aplicación en el diseño. Además, se calculó la capacitancia efectiva de compuerta de cada transistor, lo que proporcionó información crucial para el diseño posterior.
+
+La segunda parte de este informe se centró en el diseño y la optimización de un inversor mínimo con margen de ruido simétrico. Se evaluaron los tiempos de retardo y se compararon las soluciones manuales con las obtenidas mediante el uso de un optimizador, teniendo en cuenta criterios de rendimiento, potencia y área. 
+
+
+
+## 4. Referencias
 [1] Weste and D. Harris, *CMOS VLSI Design: A Circuits and Systems Perspective*, 4th ed. Boston: Addison-Wesley, 2010.
 
 [2] Process and Device Specification XH018 - 0.18 μm Modular Mixed Signal HV CMOS, PDS-018-13. Release 7.0.1. XFAB Semiconductor Foundries, Nov. 2017
